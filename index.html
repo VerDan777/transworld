@@ -5,9 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>Skateboarding</title>
   </head>
-  <body> 
-    <h1>Hello!!@!!@!!</h1>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav"> 
+        <div class="logo"><img src="./img/logo.png" alt="main-logo"/></div>
+        <nav class="main-menu main-menu--header">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Features</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Video</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Photos</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Magazine</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Store</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">How-tos</a></li>
+          </ul>
+        </nav>
+        <div class="basket"><a class="basket__text" href="#">My Cart</a><img src="#" alt="basket icon"/></div>
+      </nav>
+      <div class="features features--header">
+        <div class="features__bg"></div>
+      </div>
+      <div class="features__block">
+        <div class="features__container">
+          <h3 class="section__suptitle">Features</h3>
+          <h2 class="features__title">Readers<br>Choice<br>Awards</h2>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.</p><a class="features__button" href="#">Read More -></a>
+        </div>
+        <div class="features__nav"><a class="features__nav-prev" href="#"><- Prev</a><a class="features__nav-next" href="#">Next -></a></div>
+      </div>
+    </header>
+    <section class="section stories">
+      <div class="wrapper">
+        <h3 class="stories__title">Latest Stories</h3>
+        <button class="button">Show all</button>
+        <div class="stories__container">
+          <article class="stories__item"><img class="stories__img" src="#" alt="1"/>
+            <div class="stories__description">
+              <!--need paste icon(before element)-->
+              <p class="stories__date">21/06/2016</p><strong class="stories__author">Tony Hawk, Frontside Wallride -></strong>
+            </div>
+          </article>
+          <article class="stories__item"><img class="stories__img" src="#" alt="1"/>
+            <div class="stories__description">
+              <!--need paste icon(before element)-->
+              <p class="stories__date">21/06/2016</p>
+            </div>
+          </article>
+          <article class="stories__item"><img class="stories__img" src="#" alt="1"/>
+            <div class="stories__description">
+              <!--need paste icon(before element)-->
+              <p class="stories__date">21/06/2016</p>
+            </div>
+          </article>
+          <article class="stories__item"><img class="stories__img" src="#" alt="1"/>
+            <div class="stories__description">
+              <!--need paste icon(before element)-->
+              <p class="stories__date">21/06/2016</p>
+            </div>
+          </article>
+          <article class="stories__item stories__item--video"><img class="stories__img" src="#" alt="5"/>
+            <div class="stories__description--video">
+              <h3 class="section__suptitle">Video Drop</h3>
+              <h2 class="section__title">Joseph Gil</h2><a href="#">Watch Now -> </a>
+            </div>
+          </article>
+          <article class="stories__item"><img class="stories__img" src="#" alt="1"/>
+            <div class="stories__description">
+              <p class="stories__date">21/06/2016</p>
+            </div>
+          </article>
+        </div><a class="button" href="#">Load more</a>
+      </div>
+    </section>
+    <section class="section person">
+      <div class="wrapper">
+        <div class="person__container">
+          <h3 class="section__suptitle">Real Talk</h3>
+          <h2 class="section__title">Brad Rosado </h2>
+          <div class="person__bg"><a class="section__button" href="#"></a></div>
+          <h3 class="section__suptitle">More like this</h3>
+          <ul class="person__list">
+            <li class="person__item"><a class="person__link" href="#">Reel Talk: Jack Thompson -></a></li>
+            <li class="person__item"><a class="person__link" href="#">Reel Talk: Jack Thompson -></a></li>
+            <li class="person__item"><a class="person__link" href="#">Reel Talk: Jack Thompson -></a></li>
+          </ul><a class="button button--inverse" href="#">View All</a>
+        </div>
+      </div>
+    </section>
+    <section class="section magazine">
+      <h3 class="section__suptitle">Magazine</h3>
+      <h2 class="section__title section__title--black">Subscription</h2>
+      <div class="magazine__container">
+        <div class="magazine__bg"><img src="#" alt="magazine image"/></div>
+        <div class="magazine__description">
+          <h3 class="magazine__suptitle">Current Issue:</h3>
+          <h2 class="magazine__title">January 2017</h2>
+          <p class="magazine__text">For over 25 years, TransWorld SKATEboarding has showcased the best photography, creative directions and storytelling in skateboarding. More than just the world's #1 skateboarding magazine, TransWorld SKATEboarding is skateboarding, delivering the best original content.</p><a class="button button--black" href="#">Print Edition</a><a class="button button--black" href="#">Digital Edition</a>
+        </div>
+      </div>
+    </section>
+    <section class="features features--footer">
+      <div class="features__bg"></div>
+      <div class="features__block">
+        <div class="features__container">
+          <h3 class="section__suptitle">Features</h3>
+          <h2 class="features__title">Dylan<br> Rieder</h2>
+          <p class="features__date">1988-2016</p>
+          <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.</p><a class="features__button" href="#">Watch Now -></a>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__logo">
+          <div class="logo logo--footer"><img src="./img/logo.png" alt="logo footer"/></div>
+          <div class="sign"><img src="#" alt="sign"/></div>
+        </div>
+        <nav class="main-menu main-menu--footer">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Features</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Video</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Photos</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Magazine</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Store</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">How-tos    </a></li>
+          </ul>
+        </nav>
+        <div class="info">
+          <ul class="info__list">
+            <li class="info__item info__item--mail"><a class="info__link" href="#">info@tws.com</a></li>
+            <li class="info__item info_item--fb"><a href="www.facebook.com"><img src="./img/fb.png" alt="facebook"/></a></li>
+            <li class="info__item info_item--tw"><a href="www.twitter.com"><img src="./img/tw.png" alt="twitter"/></a></li>
+            <li class="info__item info_item--in"><a href="www.instagram.com"><img src="./img/in.png" alt="instagram"/></a></li>
+            <li class="info__item info_item--youtube"><a href="www.youtube.com"><img src="./img/yb.png" alt="youtube"/></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
