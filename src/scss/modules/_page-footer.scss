@@ -1,0 +1,22 @@
+.page-footer {
+    // box model
+    margin-top: 50px;
+
+    // visual
+    background-color: $footer;
+
+    &__logo {
+        // visual
+        border: 1px solid #404040;
+        border-bottom: none;
+    }
+
+    &__container {
+        // box model
+        padding: 25px;    
+
+        &-innner {
+            border: 1px solid #404040;
+        }     
+    }
+}

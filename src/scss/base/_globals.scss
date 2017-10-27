@@ -1,0 +1,23 @@
+html {
+    // box model
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // typogarphy
+    font-size: 16px;
+
+    // visual
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6 {
+    // box model
+    margin: 0;
+    padding: 0;
+}

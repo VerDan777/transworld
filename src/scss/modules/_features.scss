@@ -1,0 +1,107 @@
+.features {
+    // positioning
+    // box model
+    // padding: 130px 0;
+    // margin: 0 100px;
+    text-align: left;
+
+    &--footer {
+        // box model
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__block {
+        // box model
+        
+        // visual
+        background-color: $accent;
+        opacity: 0.9;
+        // z-index: -999;
+
+        &--header {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__container {
+        padding: 0px 25px;
+    }
+
+    &__title {
+        // box model
+        display: block;
+        width: 150px;
+        padding: 15px 0;
+        // typography
+        font-family: $mainFont;
+        font-size: 3rem;
+
+        // visual
+        color: white;
+        border-bottom: 3px solid #fff;
+    }
+    
+    &__text {
+        // box model
+
+        // typography
+        font-family: $KarlaRegular;
+        line-height: 2rem;
+        font-size: 1rem;
+        //visual
+        color: white;
+
+    }
+
+    &__bg {
+        // positioning
+        position: relative;
+
+        // box model
+        height: 500px;
+        width: 100%;
+        // order: 1;
+
+        // visual
+        background-image: url('./img/Dylan-bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60% 100%;
+
+        img {
+            // positioning 
+            position: absolute;
+            top: 0;
+            left: 0;
+            // box model
+            width: 50px;
+            height: 50px;
+        }
+
+        &--top {
+            // box model
+            display: none;
+        }
+    }
+
+    &__button {
+        // typography
+        font-family: $KarlaRegular;
+        // visual
+        color: white;
+        text-decoration: none;
+    }
+    
+    &__date {
+
+        // typography
+        font-family: $KarlaRegular;
+
+        // visual
+        color: white;
+    }
+
+}

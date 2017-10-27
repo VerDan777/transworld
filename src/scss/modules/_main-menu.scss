@@ -1,0 +1,36 @@
+.main-menu {
+    // box model
+    display: none;
+
+    &--footer {
+        // box model
+        display: flex;
+        justify-content: center;
+
+        // visual
+        border: 1px solid #404040;
+        border-bottom: none;
+    }
+
+    &__list {
+        // box model
+        padding-left: 0;
+        list-style-type: none;
+        text-align: left; 
+    }
+    &__item {
+        // box model
+        padding: 10px 0;
+    }
+
+    &__link {
+        // box model
+        
+        // typography
+        font-family: $KarlaRegular;
+        // font-sizs
+        // visual
+        text-decoration: none;
+        color: $date;
+    }
+}

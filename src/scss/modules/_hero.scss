@@ -1,0 +1,9 @@
+.hero {
+
+    &__bg {
+        height: 85vh;
+        // background-image: url('./img/background.jpg');
+        background-image: url('./img/background.jpg');
+        background-size: cover;  
+    }
+}

@@ -1,0 +1,64 @@
+.stories {
+        // box model
+        padding-top: 50px; 
+
+    &__title {
+        // box model
+        padding-bottom: 25px; 
+        // typography
+        font-family: $KarlaRegular;
+        font-size: 2rem;
+        font-weight: 400;
+
+        // visual
+        color: $accent;
+    }
+
+    &__item {
+        // box model
+        display: block;
+        margin-bottom: 100px;
+        // visual
+        border: 1px solid $date;
+        background-color: white;
+        // border-radius: 10px;
+        box-shadow: -8px 13px 26px -6px rgba(0,0,0,0.75);
+    }
+
+    &__img {
+     background-image: url('./img/item-s/jpg');
+     background-size: cover;
+    //  background-origin
+     height: 100%;
+     width: 100%;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap; 
+        // justify-content: flex-start;
+        width: 100%;
+        padding: 55px 10px;
+        
+    }
+    
+    &__date {
+        // box model
+        // width: 100%;
+            padding-left: 25px;
+        // typography
+        font-family: $mainFont;
+        font-weight: 600;
+        // font-size: rem;
+        // visual
+        color: $date;
+    }
+
+    &__author {
+        // typography
+        font-family: $mainFont;
+        font-weight: 500;
+    }
+}

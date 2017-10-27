@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="style.css")
+        title Skateboarding
+    body
+        header.page-header
+            nav.main-nav 
+                .logo: img(src="./img/logo.png", alt="main-logo")
+                nav.main-menu.main-menu--header
+                    ul.main-menu__list
+                        li.main-menu__item: a.main-menu__link(href="#") Features
+                        li.main-menu__item: a.main-menu__link(href="#") Video
+                        li.main-menu__item: a.main-menu__link(href="#") Photos
+                        li.main-menu__item: a.main-menu__link(href="#") Magazine
+                        li.main-menu__item: a.main-menu__link(href="#") Store
+                        li.main-menu__item: a.main-menu__link(href="#") How-tos
+                .basket
+                    a(href="#").basket__text My Cart
+                    img(src="./img/basket.png", alt="basket icon")
+            .hero
+                .hero__bg
+                    .features.features--header
+                        .features__bg.features__bg--top
+                    .features__block.features__block--header
+                        .features__container
+                            h3.section__suptitle Features
+                            h2.features__title Readers<br>Choice<br>Awards
+                            p.features__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.
+                            a.features__button(href="#") Read More ->
+                        .features__nav
+                        a.features__nav-prev(href="#") <- Prev
+                        a.features__nav-next(href="#") Next ->
+
+        section.section.stories: .wrapper
+            h3.stories__title Latest Stories
+            button.button Show all
+            .stories__container
+                article.stories__item
+                    //- picture
+                    //-     source(media="(min-width: 1200px)", srcset= "./img/item-l.jpg")
+                    //-     source(media="(min-width: 900px)", srcset="./img/item-m.jpg")
+                    img.stories__img(src="./img/item-s.jpg" alt='1')
+                    .stories__description
+                        img(src="./img/photo.png", alt="")
+                        p.stories__date 21/06/2016
+                        strong.stories__author Tony Hawk, Frontside Wallride ->
+                article.stories__item
+                    img.stories__img(src="./img/item-s.jpg" alt='1')                
+                    img.stories__img(src="#" alt='1')
+                    .stories__description
+
+                        img(src="./img/photo.png", alt="")                        
+                        p.stories__date 21/06/2016
+                        strong.stories__author Stephen Lawyer, Backside Kickflip ->
+                article.stories__item
+                    img.stories__img(src="./img/item-s.jpg" alt='1')
+                    .stories__description
+                        img(src="./img/photo.png", alt="")                        
+                        p.stories__date 21/06/2016
+                        strong.stories__author Agenda Product Preview: January 2017 ->
+                article.stories__item
+                    img.stories__img(src="./img/item-s.jpg" alt='1')
+                    .stories__description
+                        img(src="./img/photo.png", alt="")                        
+                        p.stories__date 21/06/2016
+                        strong.stories__author Agenda Product Preview: January 2017 ->
+                        
+                article.stories__item.stories__item--video
+                    img.stories__img(src="./img/item-s.jpg" alt='1')                    
+                    .stories__description--video
+                        h3.section__suptitle Video Drop
+                        h2.section__title Joseph Gil
+                        a(href="#") Watch Now -> 
+
+
+                article.stories__item
+                    img.stories__img(src="./img/item-s.jpg" alt='1')     
+                    .stories__description
+                        img(src="./img/photo.png", alt="")
+                        p.stories__date 21/06/2016
+                        p.stories__author Paul Shier, Frontside Boardslide ->
+                .button__wrapper           
+                    a.button(href="#") Load More
+        
+        section.section.person: .wrapper
+            .person__container
+                h3.section__suptitle Real Talk
+                h2.section__title Brad Rosado 
+                .person__bg
+                    a.section__button(href="#")
+                h3.section__suptitle.section__suptitle--small More like this
+                ul.person__list
+                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                a.button.button--inverse(href="#") View All
+        
+        section.section.magazine
+            h3.section__suptitle.section__suptitle--centered Magazine
+            h2.section__title.section__title--black Subscription
+            .magazine__container
+                .magazine__bg
+                .magazine__description
+                    h3.magazine__suptitle Current Issue:
+                    h2.magazine__title January 2017
+                    p.magazine__text For over 25 years, TransWorld SKATEboarding has showcased the best photography, creative directions and storytelling in skateboarding. More than just the world's #1 skateboarding magazine, TransWorld SKATEboarding is skateboarding, delivering the best original content.
+                    .magazine__wrapper
+                        a.magazine__button(href="#") Print Edition
+                        a.magazine__button(href="#") Digital Edition
+        
+        section.features.features--footer
+            .features__bg
+                img(src="./img/sign.png", alt="")
+            .features__block
+                .features__container
+                    h3.section__suptitle Features
+                    h2.features__title Dylan<br> Rieder
+                    p.features__date 1988-2016
+                    p.features__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.
+                    a.features__button(href="#") Watch Now ->
+
+        footer.page-footer
+            .page-footer__container
+                .page-footer__container-innner
+                    .page-footer__logo
+                        .logo.logo--footer: img(src="./img/logo.png", alt="logo footer")
+                        .sign: img(src="./img/sign-skate.png", alt="sign")
+                    nav.main-menu.main-menu--footer
+                        ul.main-menu__list
+                            li.main-menu__item: a.main-menu__link(href="#") Features
+                            li.main-menu__item: a.main-menu__link(href="#") Video
+                            li.main-menu__item: a.main-menu__link(href="#") Photos
+                            li.main-menu__item: a.main-menu__link(href="#") Magazine
+                            li.main-menu__item: a.main-menu__link(href="#") Store
+                            li.main-menu__item: a.main-menu__link(href="#") How-tos    
+                    .info
+                        ul.info__list
+                            li.info__item.info__item--mail: a.info__link(href="#") info@tws.com
+                            
+                            li.info__item.info_item--fb
+                                a(href="www.facebook.com")
+                                    img(src="./img/fb.png", alt="facebook")
+                            li.info__item.info_item--tw
+                                a(href="www.twitter.com")
+                                    img(src="./img/tw.png", alt="twitter")
+                            li.info__item.info_item--in
+                                a(href="www.instagram.com")
+                                    img(src="./img/in.png", alt="instagram")
+                            li.info__item.info_item--youtube
+                                a(href="www.youtube.com")
+                                    img(src="./img/yb.png", alt="youtube")
+                                                                                                                        
+
+        

@@ -1,0 +1,77 @@
+.magazine {
+
+    &__bg {
+        // box model
+        height: 350px;
+        width: 100%;
+
+        // visual
+        background-image: url('./img/skateboarding-bg.jpg');
+        background-size: cover;
+    }
+
+    &__description {
+        // box model
+        
+
+        // typography
+        font-family: $KarlaBold;
+    }
+
+    &__suptitle {
+        // box model
+        padding: 25px 0;
+
+        // typography
+        font-family: $KarlaBold;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    &__title {
+        // box model
+        padding: 15px 0;
+        
+        // typography
+        font-family: $KarlaRegular;
+        font-weight: 500;
+    }
+    &__text {
+        // box model
+        margin: 0;
+        padding: 20px 0;
+        
+        // typography
+        font-family: $KarlaRegular;
+       line-height: 1.6;
+    }
+
+    &__wrapper {
+        // box model
+        padding: 50px 0;
+        // typography
+        text-align: center;
+    }
+
+    &__button {
+        // box model
+        display: inline-block;
+        padding: 25px 25px;
+        margin: 0 10px;
+
+        // typography
+        font-family: $KarlaBold;
+
+        // visual
+        background-color: $accent;
+        color: $Suptitle;
+        text-decoration: none;
+
+        &:hover {
+            
+            // visual
+            background-color: white;
+            transition: 0.3s all ease-in-out;
+        }
+    }
+}

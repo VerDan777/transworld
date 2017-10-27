@@ -1,0 +1,47 @@
+.section {
+        // box model
+        padding: 100px 20px; 
+        // margin-bottom: 100px;
+
+        // visual
+        background-color: #f6f6f6;
+
+    &__title {
+        // box model
+        padding: 20px 0;
+
+        //typography
+        font-family: $mainFont;
+        font-weight: 400;
+        font-size: 2rem;
+        // visual
+        color: white;
+        
+        &--black {
+            // typography
+            font-family: $KarlaRegular;
+            font-weight: 400;
+            text-align: center;
+            // visual
+            color: black;
+            
+        }
+
+    }
+    &__suptitle {
+        // box model
+        padding-top: 30px; 
+        font-size: 1.1rem;
+        letter-spacing: 0.5rem;
+        text-transform: uppercase;
+        color: $Suptitle;
+        font-family: "Karla Bold",sans-serif;
+
+        &--small {
+            font-size: 0.7rem;
+        }
+        &--centered {
+            @include centered;
+        }
+    }
+}

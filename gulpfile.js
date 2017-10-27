@@ -1,0 +1,9 @@
+require('./gulp/tasks/pug');
+require('./gulp/tasks/styles');
+require('./gulp/tasks/clean.js');
+require('./gulp/tasks/copy.js');
+require('./gulp/tasks/ImageMin.js');
+require('./gulp/tasks/symbols.js');
+require('./gulp/tasks/watch.js');
+require('./gulp/tasks/production.js');
+require('./gulp/tasks/gh-pages.js');

@@ -1,0 +1,45 @@
+.person {
+    // box model
+    width: 100%;
+    // visual
+    background-color: $accent;
+    width: 100%;
+    padding: 50px 0;
+
+    &__container {
+        // width: 100%;
+        padding: 0 30px;
+    }
+    &__bg {
+        background-image: url('./img/person-s.jpg');
+        background-size: cover;
+        height: 200px;
+        // width: 375px;
+        border: 2px solid #ececec;
+        padding: 5px 5px;
+    } 
+
+    &__list {
+        // box model
+        margin: 30px 0;
+        padding-left: 0; 
+        text-align: left;
+
+        // visual
+        list-style: none;
+    }
+
+    &__item {
+        // typography
+    
+        // visual
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-family: $mainFont;
+        font-weight: 300;
+        // letter-spacing: 0.1rem;        
+    }
+}
