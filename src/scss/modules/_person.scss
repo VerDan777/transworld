@@ -17,10 +17,15 @@
     &__bg {
         background-image: url('./img/person-s.jpg');
         background-size: cover;
-        height: 200px;
-        width: 60%;
+        height: 300px;
         border: 2px solid #ececec;
         padding: 5px 5px;
+
+        @include atTabletsPortrait {
+            // box model
+             width: 60%;
+            height: 200px;
+        }
 
         @include atDesktop {
             // box model
@@ -33,7 +38,12 @@
 
     &__info {
        // box model
-       padding: 25px 70px;
+       
+
+       @include atTabletsPortrait {
+            // box model
+        padding: 25px 70px;
+       }
     }
 
     &__desc {

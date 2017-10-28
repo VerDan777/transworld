@@ -42,6 +42,7 @@
         font-family: $KarlaBold;
         font-size: 1.3rem;
         font-weight: 500;
+        text-align: center;
 
         @include atDesktop {
             // typography
@@ -57,6 +58,8 @@
         // typography
         font-family: $KarlaRegular;
         font-weight: 500;
+        font-size: 2rem;
+        text-align: center;
 
         @include atDesktop {
             // typography

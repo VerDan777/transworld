@@ -41,6 +41,54 @@ h1,h2,h3,h4,h5,h6 {
 
 .main-nav {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main-nav__menu-icon {
+  height: 40px;
+  width: 40px;
+  order: -2;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.main-nav__menu-icon::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 27px;
+  transform-origin: 0 50%;
+  display: block;
+  height: 3px;
+  width: 28px;
+  background-color: black;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav__menu-icon__middle {
+  position: absolute;
+  left: 5px;
+  top: 45px;
+  display: block;
+  height: 3px;
+  width: 28px;
+  background-color: black;
+  transition: all 0.3s ease-out;
+}
+
+.main-nav__menu-icon::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 36px;
+  transform-origin: 0 50%;
+  display: block;
+  height: 3px;
+  width: 28px;
+  background-color: black;
+  transition: all 0.3s ease-out;
 }
 
 .basket__text {
@@ -131,11 +179,6 @@ h1,h2,h3,h4,h5,h6 {
   text-align: left;
 }
 
-.features--footer {
-  display: flex;
-  height: 60vh;
-}
-
 .features__block {
   background-color: #1f1f1f;
   opacity: 0.9;
@@ -185,6 +228,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .features__button {
+  display: block;
+  padding: 35px 0;
   font-family: "Karla Regular", sans-serif;
   color: white;
   text-decoration: none;
@@ -303,10 +348,6 @@ h1,h2,h3,h4,h5,h6 {
   display: inline;
 }
 
-.button__load {
-  width: 10%;
-}
-
 .person {
   width: 100%;
   background-color: #1f1f1f;
@@ -321,14 +362,9 @@ h1,h2,h3,h4,h5,h6 {
 .person__bg {
   background-image: url("./img/person-s.jpg");
   background-size: cover;
-  height: 200px;
-  width: 60%;
+  height: 300px;
   border: 2px solid #ececec;
   padding: 5px 5px;
-}
-
-.person__info {
-  padding: 25px 70px;
 }
 
 .person__list {
@@ -369,12 +405,15 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Karla Bold", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
+  text-align: center;
 }
 
 .magazine__title {
   padding: 15px 0;
   font-family: "Karla Regular", sans-serif;
   font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .magazine__text {
@@ -467,6 +506,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media (min-width: 768px) {
+  .button__load {
+    width: 10%;
+  }
+
+  .person__bg {
+    width: 60%;
+    height: 200px;
+  }
+
+  .person__info {
+    padding: 25px 70px;
+  }
+
   .info {
     flex: 1;
     margin: auto 0;
@@ -536,6 +588,10 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
   }
 
+  .main-nav__menu-icon {
+    display: none;
+  }
+
   .basket {
     height: 20px;
     width: 20px;
@@ -573,6 +629,11 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 50px;
   }
 
+  .features--footer {
+    display: flex;
+    height: 60vh;
+  }
+
   .features__block--header {
     height: 100%;
     display: flex;
@@ -592,6 +653,7 @@ h1,h2,h3,h4,h5,h6 {
 
   .features__button {
     font-family: "Karla Bold", sans-serif;
+    padding: 0;
   }
 
   .stories__item {

@@ -5,12 +5,11 @@
     &--footer {
 
         // box model
-        display: flex;
-        // flex-direction: column;
-        height: 60vh;
-        
-        @include atDesktop {
 
+        @include atDesktop {
+            // box model
+            display: flex;
+            height: 60vh;
         }
 
     }
@@ -112,15 +111,21 @@
     }
 
     &__button {
+        // box model
+        display: block;
+        padding: 35px 0;
         // typography
         font-family: $KarlaRegular;
+
         // visual
         color: white;
         text-decoration: none;
 
+
         @include atDesktop {
             // typography
             font-family: $KarlaBold;
+            padding: 0;
         }
     }
     

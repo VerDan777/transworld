@@ -1,14 +1,89 @@
 .main-nav {
     // positioning
     position: relative;
-
-
+    
+    // box model
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
     @include atDesktop {
         // box model
         display: flex;
         justify-content: space-between;
         align-items: center;
         // overflow: hidden;
+    }
+
+    &__menu-icon {
+        // box model 
+        height: 40px;
+        width: 40px;
+        order: -2;
+
+        // visual
+        border-radius: 50%;
+        border: 1px solid transparent;
+
+        @include atDesktop {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 5px;
+            top: 27px;
+
+            transform-origin: 0 50%;
+
+            // box model
+            display: block;
+            height: 3px;
+            width: 28px;
+
+            // visual
+            background-color: black;
+            transition: all 0.3s ease-out;
+        }
+
+        &__middle {
+            // positioning
+            position: absolute;
+            left: 5px;
+            top: 45px;
+
+            // box model
+            display: block;
+            height: 3px;
+            width: 28px;
+
+            // visual
+            background-color: black;
+            transition: all 0.3s ease-out;
+        }
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 5px;
+            top: 36px;
+
+            transform-origin: 0 50%;
+
+            // box model
+            display: block;
+            height: 3px;
+            width: 28px;
+
+            // visual
+            background-color: black;
+            transition: all 0.3s ease-out;
+            }
     }
     
 }

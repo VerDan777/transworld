@@ -38,6 +38,10 @@
 
     &__load {
         // box model
-        width: 10%;
+
+        @include atTabletsPortrait {
+        // box model
+            width: 10%;
+        }
     }
 }
