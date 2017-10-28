@@ -25,24 +25,22 @@ html(lang="en")
                 .hero__bg
                     .features.features--header
                         .features__bg.features__bg--top
-                    .features__block.features__block--header
-                        .features__container
-                            h3.section__suptitle Features
-                            h2.features__title Readers<br>Choice<br>Awards
-                            p.features__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.
-                            a.features__button(href="#") Read More ->
-                        .features__nav
-                        a.features__nav-prev(href="#") <- Prev
-                        a.features__nav-next(href="#") Next ->
+                //- .features__block.features__block--header
+                //-     .features__container
+                //-         h3.section__suptitle Features
+                //-         h2.features__title Readers<br>Choice<br>Awards
+                //-         p.features__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu dolor rutrum neque pretium hendrerit. Etiam rutrum condimentum urna quis malesuada.
+                //-         a.features__button(href="#") Read More ->
+                //-     .features__nav
+                //-         a.features__nav-prev(href="#") <- Prev
+                //-         a.features__nav-next(href="#") Next ->
 
         section.section.stories: .wrapper
+            .stories__left
             h3.stories__title Latest Stories
             button.button Show all
             .stories__container
                 article.stories__item
-                    //- picture
-                    //-     source(media="(min-width: 1200px)", srcset= "./img/item-l.jpg")
-                    //-     source(media="(min-width: 900px)", srcset="./img/item-m.jpg")
                     img.stories__img(src="./img/item-s.jpg" alt='1')
                     .stories__description
                         img(src="./img/photo.png", alt="")
@@ -83,21 +81,23 @@ html(lang="en")
                         img(src="./img/photo.png", alt="")
                         p.stories__date 21/06/2016
                         p.stories__author Paul Shier, Frontside Boardslide ->
-                .button__wrapper           
-                    a.button(href="#") Load More
+            .button__wrapper           
+                a.button.button__load(href="#") Load More
         
         section.section.person: .wrapper
             .person__container
                 h3.section__suptitle Real Talk
-                h2.section__title Brad Rosado 
-                .person__bg
-                    a.section__button(href="#")
-                h3.section__suptitle.section__suptitle--small More like this
-                ul.person__list
-                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
-                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
-                    li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
-                a.button.button--inverse(href="#") View All
+                h2.section__title Brad Rosado
+                .person__desc
+                    .person__bg
+                        a.section__button(href="#")
+                    .person__info
+                        h3.section__suptitle.section__suptitle--small More like this
+                        ul.person__list
+                            li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                            li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                            li.person__item: a.person__link(href="#") Reel Talk: Jack Thompson ->
+                        a.button.button--inverse(href="#") View All
         
         section.section.magazine
             h3.section__suptitle.section__suptitle--centered Magazine
@@ -136,7 +136,7 @@ html(lang="en")
                             li.main-menu__item: a.main-menu__link(href="#") Photos
                             li.main-menu__item: a.main-menu__link(href="#") Magazine
                             li.main-menu__item: a.main-menu__link(href="#") Store
-                            li.main-menu__item: a.main-menu__link(href="#") How-tos    
+                            li.main-menu__item: a.main-menu__link(href="#") How-tos
                     .info
                         ul.info__list
                             li.info__item.info__item--mail: a.info__link(href="#") info@tws.com

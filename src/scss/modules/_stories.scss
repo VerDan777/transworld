@@ -1,10 +1,28 @@
 .stories {
-        // box model
-        padding-top: 50px; 
+    // box model
+    margin-top: 50px;
 
+    &__left {
+        background-color: red;
+        width: 50%;
+    }
+
+    &__right {
+        background-color: white;
+        width: 50%;
+    }
+
+    &__container {
+       // box model
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       align-items: flex-start;
+    }
     &__title {
         // box model
-        padding-bottom: 25px; 
+        // float
+
         // typography
         font-family: $KarlaRegular;
         font-size: 2rem;
@@ -18,11 +36,16 @@
         // box model
         display: block;
         margin-bottom: 100px;
+
         // visual
         border: 1px solid $date;
         background-color: white;
-        // border-radius: 10px;
         box-shadow: -8px 13px 26px -6px rgba(0,0,0,0.75);
+
+        @include atDesktop {
+            flex: 1 1 300px;
+            margin: 60px 60px;
+        }
     }
 
     &__img {

@@ -1,8 +1,14 @@
 .main-nav {
     // positioning
     position: relative;
-    // box model
 
 
+    @include atDesktop {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // overflow: hidden;
+    }
     
 }

@@ -1,6 +1,11 @@
 .main-menu {
-    // box model
     display: none;
+    
+    @include atDesktop {
+        // box model
+        display: flex;
+    }
+    
 
     &--footer {
         // box model
@@ -10,6 +15,11 @@
         // visual
         border: 1px solid #404040;
         border-bottom: none;
+
+        @include atTabletsLandscape {
+            flex: 2;
+            
+        }
     }
 
     &__list {
@@ -17,10 +27,18 @@
         padding-left: 0;
         list-style-type: none;
         text-align: left; 
+        margin: auto;
+        
     }
     &__item {
         // box model
         padding: 10px 0;
+
+        @include atTabletsLandscape {
+            // box model
+            display: inline-block;
+            padding: 10px 10px;
+        }
     }
 
     &__link {

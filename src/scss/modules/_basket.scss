@@ -1,12 +1,15 @@
 .basket {
     // positioning
-    position: absolute;
-    top: 35px;
-    right: 55px;
 
     // box model
-    height: 20px;
-    width: 20px;
+    @include atDesktop {
+        // box model
+        height: 20px;
+        width: 20px;
+        margin-right: 75px; 
+    }
+    
+    // flex: 1;
 
     &__text {
         // box model

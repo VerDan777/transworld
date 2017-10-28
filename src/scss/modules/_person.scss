@@ -9,15 +9,43 @@
     &__container {
         // width: 100%;
         padding: 0 30px;
+
+        @include atDesktop {
+            padding: 100px 150px;
+        }
     }
     &__bg {
         background-image: url('./img/person-s.jpg');
         background-size: cover;
         height: 200px;
-        // width: 375px;
+        width: 60%;
         border: 2px solid #ececec;
         padding: 5px 5px;
-    } 
+
+        @include atDesktop {
+            // box model
+            height: 500px;
+            background-image: url('./img/person-l.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__info {
+       // box model
+       padding: 25px 70px;
+    }
+
+    &__desc {
+
+            @include atDesktop {
+                // box model
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+        }
 
     &__list {
         // box model
@@ -30,6 +58,8 @@
     }
 
     &__item {
+        // box model
+        padding: 20px 0;
         // typography
     
         // visual

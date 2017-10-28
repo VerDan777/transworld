@@ -2,21 +2,54 @@
     // box model
     margin-top: 50px;
 
-    // visual
-    background-color: $footer;
+        @include atTabletsLandscape {
+            // display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        @include atDesktop {
+            // display: flex;
+            // flex-direction: row;
+        }
+
+        // visual
+        background-color: $footer;
 
     &__logo {
         // visual
         border: 1px solid #404040;
         border-bottom: none;
+
+        @include atTabletsLandscape {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            flex: 1;
+        }
     }
 
     &__container {
         // box model
-        padding: 25px;    
-
+        padding: 25px;
+        @include atDesktop {
+            // box model
+            // display: flex;
+            flex-direction: row;
+            
+        }
+    
         &-innner {
+            // box model
+            
+            @include atTabletsLandscape {
+                // box model
+                display: flex;
+            }
+            // visual
             border: 1px solid #404040;
-        }     
+        }
     }
 }

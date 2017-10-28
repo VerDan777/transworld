@@ -6,6 +6,12 @@
         // visual
         background-color: #f6f6f6;
 
+        &--stories {
+            // box model
+            padding: 100px 30px;
+        }
+
+
     &__title {
         // box model
         padding: 20px 0;
@@ -14,8 +20,17 @@
         font-family: $mainFont;
         font-weight: 400;
         font-size: 2rem;
+
         // visual
         color: white;
+
+        @include atDesktop {
+            // box model
+
+            // typography
+            font-size: 3rem;
+            font-weight: 100;
+        }
         
         &--black {
             // typography
@@ -24,6 +39,10 @@
             text-align: center;
             // visual
             color: black;
+
+            @include atDesktop {
+                font-weight: 600;
+            }
             
         }
 
@@ -37,8 +56,16 @@
         color: $Suptitle;
         font-family: "Karla Bold",sans-serif;
 
+        @include atDesktop {
+            // typography
+            font-size: 1em;
+        }
+
         &--small {
             font-size: 0.7rem;
+            @include atDesktop {
+                padding-bottom: 50px;
+            }
         }
         &--centered {
             @include centered;

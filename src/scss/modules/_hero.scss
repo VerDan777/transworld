@@ -1,9 +1,30 @@
 .hero {
+    // positioning
+    position: relative;
+
+    // box model
+    height: 100vh;
+
+    @include atDesktop {
+        // box model
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
     &__bg {
-        height: 85vh;
-        // background-image: url('./img/background.jpg');
+        // box model
+        height: 100vh;
+
+        @include atDesktop {
+
+            // box model
+           flex: 2;
+
+        }
+
+        // visual
         background-image: url('./img/background.jpg');
-        background-size: cover;  
+        background-size: cover;
     }
 }

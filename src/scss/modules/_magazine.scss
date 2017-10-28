@@ -1,9 +1,21 @@
 .magazine {
 
+    // visual
+    background-color: white;
+
+    &__container {
+
+        @include atDesktop {
+            // box model
+            display: flex;
+            margin: 200px 0;
+        }
+    }
+
     &__bg {
         // box model
         height: 350px;
-        width: 100%;
+        width: 70%;
 
         // visual
         background-image: url('./img/skateboarding-bg.jpg');
@@ -13,9 +25,13 @@
     &__description {
         // box model
         
-
         // typography
         font-family: $KarlaBold;
+        
+        @include atDesktop {
+            // box model
+            width: 50%;
+        }
     }
 
     &__suptitle {
@@ -49,8 +65,13 @@
     &__wrapper {
         // box model
         padding: 50px 0;
+
         // typography
         text-align: center;
+        @include atDesktop {
+            // typography
+            text-align: left;
+        }
     }
 
     &__button {
