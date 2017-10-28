@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .page-header {
-  height: 100vh;
+  height: 85vh;
 }
 
 .logo {
@@ -77,11 +77,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .hero {
   position: relative;
-  height: 100vh;
+  height: 85vh;
 }
 
 .hero__bg {
-  height: 100vh;
+  height: 85vh;
   background-image: url("./img/background.jpg");
   background-size: cover;
 }
@@ -133,7 +133,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .features--footer {
   display: flex;
-  flex-direction: column;
+  height: 60vh;
 }
 
 .features__block {
@@ -260,7 +260,7 @@ h1,h2,h3,h4,h5,h6 {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 55px 10px;
+  padding: 25px 10px;
 }
 
 .stories__date {
@@ -553,7 +553,7 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   .hero__bg {
-    flex: 2;
+    width: 100%;
   }
 
   .section__title {
@@ -577,7 +577,21 @@ h1,h2,h3,h4,h5,h6 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    justify-content: space-between;
+  }
+
+  .features__container {
+    width: 35%;
+  }
+
+  .features__bg {
+    background-position: center center;
+    height: 100%;
+    order: 1;
+  }
+
+  .features__button {
+    font-family: "Karla Bold", sans-serif;
   }
 
   .stories__item {
@@ -612,8 +626,16 @@ h1,h2,h3,h4,h5,h6 {
     width: 50%;
   }
 
+  .magazine__title {
+    font-size: 3rem;
+  }
+
   .magazine__wrapper {
     text-align: left;
+  }
+
+  .page-footer {
+    margin: 0;
   }
 
   .page-footer__container {

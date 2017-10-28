@@ -42,6 +42,12 @@
         font-family: $KarlaBold;
         font-size: 1.3rem;
         font-weight: 500;
+
+        @include atDesktop {
+            // typography
+            // font-family: $KarlaRegular;
+            // font-size: 3rem;
+        }
     }
 
     &__title {
@@ -51,6 +57,11 @@
         // typography
         font-family: $KarlaRegular;
         font-weight: 500;
+
+        @include atDesktop {
+            // typography
+            font-size: 3rem;
+        }
     }
     &__text {
         // box model
